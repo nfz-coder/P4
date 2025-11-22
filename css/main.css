@@ -1,0 +1,203 @@
+/*add root with color palette*/
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display', "Trebuchet MS", Helvetica, sans-serif;
+
+}
+
+body {
+
+    padding-bottom: 100px;
+}
+
+.custom-nav {
+    background-color: #E6CCB2;
+}
+
+.custom-nav .nav-link {
+    color: #774936;
+    display: block;
+    padding: 18px 20px;
+}
+
+nav a.nav-link:hover {
+    background-color:#DDB892;
+    color: #774936;
+    border-radius:4px;
+}
+
+.rounded-pill {
+    background-color: #0dcaf0;
+}
+
+
+
+/*search box on homepage*/
+.input-mysize {
+    height: 30px;
+    padding: 0 5px;
+    font-size: 16px;
+    line-height: 15px;
+
+}
+.navbar .form-control,
+.navbar .btn {
+    height: 35px;
+}
+.search-bar{
+    padding-top: 15px;
+    padding-right: 18px;
+
+}
+
+/* Carousel Images */
+#heroCarousel .carousel-item img {
+    width: 100vh;
+    height: 60vh;
+    object-fit:cover;
+    object-position: right;
+}
+
+/* Image left fade*/
+
+.fade-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 40%);
+    z-index: 5;
+    pointer-events: none;
+}
+
+.carousel-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    z-index: 10;
+    color: #6c584c;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width:90%;
+    max-width: 600px;
+}
+
+/*about us styling*/
+#about {
+    background-color: #f7f7f7
+
+}
+
+#about .card {
+    border-radius: 10px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+}
+
+#about p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333;
+}
+#about .card {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+#about .card p {
+    margin-bottom: 1rem;
+}
+
+.explore-message {
+
+    color: #b08968;
+    font-family: 'Noto Serif Ethiopic', sans-serif;
+    font-size: 6rem;
+    text-align: center;
+    max-width: 480px;
+    line-height: 1.1;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #582f0e;
+
+}
+.explore-message h3 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 600;
+}
+
+.elongated-text {
+    font-stretch: expanded;
+}
+
+/*CARDS HOVER*/
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 480px;
+}
+
+.explore-msg {
+    font-family: 'Oswald', sans-serif;
+    color: #6c584c;
+    margin-top: 15px;
+
+}
+
+
+
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f5ebe0;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+html, body {
+    height: 155%;
+}
+main {
+    flex: 1;
+    min-height: 160vh;
+}
+footer {
+    margin-top: 40px;
+}
