@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>My First Bootstrap Page</title>
     <!-- CSS only -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
@@ -13,8 +14,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 
 </head>
+
+
+<!--USED SAME LAYOUT AS ORIGIN PAGE WITH DIFFERENT TEXT AND IMAGES-->
 <body>
 <nav class="navbar navbar-expand-md
                     justify-content-start
@@ -24,7 +30,7 @@
 
     <!-- Brand -->
     <a class="navbar-brand" href="index.html">
-        <img src="images/logo.png" alt="Company Coffee Logo" style="width: 60px;" class="rounded-pill">
+        <img src="images/logo.jpg" alt="Company Coffee Logo" style="width: 50px; height: 50px" class="rounded-pill logo">
     </a> <!--update the #'s to your page links and copy it to
                 your contact page-->
 
@@ -33,8 +39,8 @@
             data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify" id="collapsibleNavbar">
-        <ul class="navbar-nav justify-content-center gap-xl-5">
+    <div class="collapse navbar-collapse align-items-center" id="collapsibleNavbar">
+        <ul class="navbar-nav gap-xl-5 me-auto">
             <!-- Links -->
             <li class="nav-item">
                 <a class="nav-link" href="index.html">HOME</a>
@@ -57,17 +63,156 @@
                 </a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="contact.html">Contact Us!</a>
-                    <a class="dropdown-item" href="resources.html">More Resources</a>
+                    <a class="dropdown-item" href="more-resources.html">More Resources</a>
                 </div>
             </li>
-            <form class="d-flex ms-lg-10 ms-auto" role="search">
-                <input class="form-control input-mysize me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light input-mysize" type="submit">Search</button>
-            </form>
-        </ul>
 
+        </ul>
+        <form class="d-flex ms-lg-10 ms-auto search-bar" role="search">
+            <input class="form-control input-mysize me-2" type="search" placeholder="search" aria-label="Search">
+            <button class="btn btn-outline-light input-mysize" type="submit">
+                <i class="bi bi-search"></i>
+            </button>
+        </form>
     </div>
 </nav>
+<main>
+
+    <!--ORIGIN BANNER-->
+    <section class="tradition-banner">
+        <div class="banner-image">
+            <img src="images/tradition-banner.png" alt="Origin Banner with aesthetic coffee images.">
+            <div class="overlay-text-trad text-center">
+                <h1 class="origin-title">Traditions</h1>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+
+        <!--first row of text-image pair-->
+        <div class="row align-items-center my-5 gx-xxl-5 trad-card">
+            <div class="col-md-6">
+                <div class="content-block p-4 shadow-sm">
+                    <h2 class="fw-bold mb-3">The Heart of the Ethiopian Coffee Ceremony</h2>
+                    <p>The Ethiopian coffee ceremony is not simply a way of preparing a drink — it is
+                        a ritual of hospitality, patience, and togetherness. Traditionally performed three times
+                        a day, the ceremony unfolds slowly, intentionally, and beautifully. The host arranges a low
+                        table, spreads fresh grass to symbolize renewal, and prepares the tools for brewing.
+                        Every step is done in full view of guests, honoring transparency and care.
+                        The ceremony reinforces a cultural belief that coffee is meant to be shared, not rushed,
+                        and that meaningful moments grow from simple rituals performed with love.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <img src="images/etan-img.jpg" class="img-fluid rounded shadow-sm origin-images" alt="Beautiful view of Ethiopian highlands.">
+            </div>
+        </div>
+
+
+        <!--second row of text-image pair-->
+        <div class="row align-items-center my-5 gx-5">
+            <div class="col-md-6">
+                <img src="images/bean-roast.jpg" class="img-fluid rounded shadow-sm origin-images" alt="Aesthetic image of Ethiopian Sidama Women.">
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="content-block p-4 shadow-sm">
+                    <h2 class="fw-bold mb-3"> Roasting the Beans: Aroma, Transformation, and Invitation
+                    </h2>
+                    <p>The ceremony begins with raw green coffee beans placed on a flat pan over hot charcoal. The host roasts them by hand, constantly moving the pan in gentle circles to ensure an even roast. As the beans darken and begin to crackle, a rich, smoky aroma fills the room. It is customary for the host to walk the pan around, wafting the scent toward each guest — a gesture called “sending the aroma.” This moment signals that the ceremony has truly begun. The fragrance is considered a blessing, inviting people to pause, breathe, and be present.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!--third row of image-text pair-->
+        <div class="row align-items-center my-5 gx-5">
+            <div class="col-md-6">
+                <div class="content-block p-4 shadow-sm">
+                    <h2 class="fw-bold mb-3">Essential Tools: Jebena, Cups, Incense, and Meaningful Details
+                    </h2>
+                    <p>The tools of the ceremony are timeless and symbolic. The jebena, a clay pot with a round base and long spout, is the centerpiece. Its curved shape represents continuity and femininity, and its dark surface carries the memory of decades of ceremonies. Small porcelain cups — sini — are arranged on a tray called a rekbot. Nearby, burning incense such as etan or frankincense rises in soft white curls, believed to cleanse the space and create tranquility. Each element has purpose: fire for transformation, clay for earth, coffee for community, and incense for blessing.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <img src="images/ceremony-img.jpg" class="img-fluid rounded shadow-sm origin-images" alt="Aesthetic image of Ethiopian highlands.">
+            </div>
+        </div>
+
+        <!--fourth row of text-image pair-->
+        <div class="row align-items-center my-5 gx-5">
+            <div class="col-md-6">
+                <img src="images/community-ceremony%20-%20Copy.jpg" class="img-fluid rounded shadow-sm origin-images" alt="Aesthetic image of modern coffee cup.">
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="content-block p-4 shadow-sm">
+                    <h2 class="fw-bold mb-3">Community & Connection: What the Ceremony Truly Represents
+                    </h2>
+                    <p>More than the drink itself, the ceremony embodies community. Family, neighbors, and visitors
+                        gather around the host, sharing stories, laughter, and comfort. It is considered impolite to
+                        rush or skip a round; staying shows gratitude and respect. The ceremony traditionally
+                        includes three rounds:
+                        <ul>
+                            <li>Abol (the first, strongest brew)</li>
+
+                            <li>Tona (the second)</li>
+
+                            <li>Baraka (the third, symbolizing blessing)</li>
+                        </ul>
+                        By the third round, conversations have deepened, and the atmosphere becomes warm and intimate.
+                    Coffee becomes the medium through which relationships grow.
+                    </p>
+                </div>
+            </div>
+            <!--fifth row of image-text pair-->
+            <div class="row align-items-center my-5 gx-5">
+                <div class="col-md-6">
+                    <div class="content-block p-4 shadow-sm">
+                        <h2 class="fw-bold mb-3"> Food, Flavor, and the Rhythm of Tradition
+                        </h2>
+                        <p>Popcorn, roasted barley (kolo), or sweet slices of ambasha bread are often served alongside each cup. These foods balance the bitterness of the coffee and symbolize abundance and hospitality. As the jebena simmers over the charcoal, the host carefully pours the coffee into cups from high above — a practiced skill that shows respect for the craft. The slow rhythm of pouring, serving, and refilling creates a peaceful cycle. Every gesture — from arranging the cups to offering the final sip — reinforces the idea that coffee is not a drink you rush, but an experience you savor.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="images/popcorn-ambasha.jpg" class="img-fluid rounded shadow-sm origin-images" alt="Aesthetic image of Ethiopian highlands.">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
